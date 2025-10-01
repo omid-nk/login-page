@@ -34,7 +34,6 @@ button,
     appearance: button;
     -webkit-appearance: button;
     -moz-appearance: button;
-    background: none;
     border: none;
     padding: 0;
 }
