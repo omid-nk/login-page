@@ -1,4 +1,4 @@
-body{
+body {
     height: 100vh;
     width: 100%;
     background: url(../image/bg-login-page.png) no-repeat;
@@ -9,7 +9,7 @@ body{
     font-family: Roboto;
 }
 
-.login-section{
+.login-section {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -20,17 +20,17 @@ body{
 
 
 
-.left-section{
+.left-section {
     display: flex;
     justify-content: space-between;
     width: 450px;
     height: 100%;
     background: #ffffff;
-    padding: 1.5rem ;
+    padding: 1.5rem;
     border-radius: 16px 0 0 16px;
 }
 
-.left-section-content{
+.left-section-content {
     display: flex;
     text-align: center;
     justify-content: space-around;
@@ -39,45 +39,50 @@ body{
     margin: auto;
 }
 
-.left-section-content > h2{
+.left-section-content>h2 {
     margin: 0 0 1rem 0;
     font-weight: 500;
 }
-.left-section-content > p{
+.left-section-content>p {
     font-size: 14px;
     color: #696969;
 }
-.left-section-content > form{
+.left-section-content>form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 2rem 0 ;
+    margin: 1rem 0 2rem 0;
 }
-.label-form{
-    margin: 0.6rem 0;
+
+.label-form {
+    margin: 1rem 0 0.4rem 0;
     font-size: 14px;
     text-align: left;
 }
-.input-form{
-    margin: 0 0 1rem 0;
-    height: 2.5rem;
+
+.input-form {
+    margin:  0;
+    height: 2.4rem;
     border: 1px solid black;
     border-radius: 4px;
     outline: none;
     padding: 8px;
     transition: all 0.3s ease;
 }
+
 .input-form:focus {
     background-color: #f3f7ff;
 }
-form > a{
+
+form>a {
     margin-top: 1rem;
     font-size: 14px;
     text-align: left;
     text-decoration: none;
     color: #0037ff;
 }
-.submit-btn{
+
+.submit-btn {
     height: 2.5rem;
     margin-top: 0.8rem;
     color: rgb(255, 255, 255);
@@ -85,7 +90,8 @@ form > a{
     border-radius: 4px;
     cursor: pointer;
 }
-.submit-btn:hover{
+
+.submit-btn:hover {
     background-color: #000000;
 }
 
@@ -99,6 +105,7 @@ form > a{
     font-size: 14px;
     margin: 0 0 1rem 0;
 }
+
 .divider::before,
 .divider::after {
     content: "";
@@ -106,19 +113,20 @@ form > a{
     border: none;
     border-bottom: 1px solid #b0b0b0;
 }
+
 .divider span {
     white-space: nowrap;
 }
 
 
-.login-btn{
+.login-btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 0.5rem;
 }
 
-.btn{
+.btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,40 +142,46 @@ form > a{
     height: 3rem;
     transition: all 0.3s ease;
 }
-.btn:hover{
+
+.btn:hover {
     box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.082);
 }
-.btn > svg{
+
+.btn>svg {
     width: 1.5rem;
     height: 1.5rem;
     flex-shrink: 0;
 }
 
 
-.signup{
-    color:#b0b0b0;
+.signup {
+    color: #b0b0b0;
     font-size: 14px;
     margin-top: 2rem;
 }
-.signup > a{
+
+.signup>a {
     text-decoration: none;
     color: #0037ff;
 }
-.right-section{
+
+.right-section {
     height: 100%;
 }
-.right-section img{
+
+.right-section img {
     height: 100%;
-    border-radius: 0 16px 16px  0 ;
+    border-radius: 0 16px 16px 0;
 }
 
 
 
 @media only screen and (max-width: 1200px) {
-    .right-section{
+    .right-section {
         display: none;
     }
-    .left-section{
+
+    .left-section {
         border-radius: 16px;
     }
 }
@@ -179,14 +193,16 @@ form > a{
 }
 
 @media only screen and (max-width: 350px) {
-    body{
+    body {
         background-image: none;
     }
+
     .login-section {
         border: none;
         box-shadow: none;
         border-radius: 0;
     }
+
     .left-section {
         padding: 0.2rem;
     }

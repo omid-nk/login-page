@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/normalize.css">
-    <link rel="stylesheet" href="../style/login.css">
-    <title>Login page</title>
+    <link rel="stylesheet" href="../style/signup.css">
+    <title>Sign Up</title>
 </head>
 
 <body>
@@ -17,16 +17,19 @@
         <div class="left-section">
             <div class="left-section-content">
 
-                <h2>Log in</h2>
-                <p>Welcome back! Please enter your details</p>
-
+                <h2>Sign up</h2>
+                <p>Welcome! Please enter your details</p>
                 <form action="">
                     <label class="label-form" for="email">Email</label>
                     <input class="input-form" type="email" name="email" id="email" required>
                     <label class="label-form" for="password">Password</label>
-                    <input class="input-form" type="password" name="password" id="password" required minlength="8" maxlength="16">
-                    <a href="#">forgot password ?</a>
-                    <button type="submit" class="submit-btn">Log in</button>
+                    <input class="input-form" type="password" name="password" id="password" required minlength="8"
+                        maxlength="16">
+                    <label class="label-form" for="cofirm-password">Confirm your password</label>
+                    <input class="input-form" type="password" name="cofirm-password" id="cofirm-password" required minlength="8"
+                        maxlength="16">
+                    
+                    <button type="submit" class="submit-btn">Sign UP</button>
                 </form>
 
                 <div class="divider">
@@ -51,8 +54,8 @@
                 </div>
 
                 <div>
-                    <p class="signup"> 
-                        Don't have account? <a href="../page/signup.html">Sign up</a>
+                    <p class="signup">
+                        Already have account? <a href="../page/login.html">Log in</a>
                     </p>
                 </div>
 
