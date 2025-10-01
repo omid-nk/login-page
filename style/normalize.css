@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    margin: 0;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    appearance: button;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+[type="search"] {
+    appearance: textfield;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[hidden] {
+    display: none;
+}
