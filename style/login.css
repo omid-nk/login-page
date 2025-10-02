@@ -6,7 +6,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Roboto;
 }
 
 .login-section{
@@ -35,11 +34,6 @@ body{
     top: 0.8rem;
     left: 1rem;
     width: 26px;
-}
-.arrow-left:hover{
-    position: absolute;
-    left: 0.8rem;
-    transition: all 0.2s ease;
 }
 
 .left-section-content{
