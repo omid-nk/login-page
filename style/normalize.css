@@ -1,10 +1,8 @@
-/* Modern CSS Reset with custom properties */
 :root {
     --font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --line-height: 1.15;
 }
 
-/* Box sizing and base reset */
 *,
 *::before,
 *::after {
@@ -13,7 +11,6 @@
     padding: 0;
 }
 
-/* HTML and body */
 html {
     line-height: var(--line-height);
     -webkit-text-size-adjust: 100%;
@@ -25,7 +22,6 @@ body {
     line-height: 1.6;
 }
 
-/* Images and media */
 img,
 picture,
 video,
@@ -36,7 +32,6 @@ svg {
     height: auto;
 }
 
-/* Form elements */
 button,
 input,
 select,
@@ -45,7 +40,6 @@ textarea {
     color: inherit;
 }
 
-/* Button resets */
 button,
 [type="button"],
 [type="reset"],
@@ -58,7 +52,6 @@ button,
     cursor: pointer;
 }
 
-/* Search input */
 [type="search"] {
     appearance: textfield;
     -webkit-appearance: textfield;
@@ -66,18 +59,15 @@ button,
     outline-offset: -2px;
 }
 
-/* Hidden elements */
 [hidden] {
     display: none !important;
 }
 
-/* Focus styles */
 :focus-visible {
     outline: 2px solid #005fcc;
     outline-offset: 2px;
 }
 
-/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
