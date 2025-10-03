@@ -1,44 +1,64 @@
-* {
+/* Modern CSS Reset with custom properties */
+:root {
+    --font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --line-height: 1.15;
+}
+
+/* Box sizing and base reset */
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Roboto;
 }
 
+/* HTML and body */
 html {
-    line-height: 1.15;
+    line-height: var(--line-height);
     -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 body {
-    margin: 0;
+    font-family: var(--font-family);
+    line-height: 1.6;
 }
 
-img {
+/* Images and media */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
     max-width: 100%;
     height: auto;
-    border-style: none;
 }
 
+/* Form elements */
 button,
 input,
 select,
 textarea {
     font: inherit;
-    margin: 0;
+    color: inherit;
 }
 
+/* Button resets */
 button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-    appearance: button;
-    -webkit-appearance: button;
-    -moz-appearance: button;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
     border: none;
-    padding: 0;
+    cursor: pointer;
 }
 
+/* Search input */
 [type="search"] {
     appearance: textfield;
     -webkit-appearance: textfield;
@@ -46,6 +66,24 @@ button,
     outline-offset: -2px;
 }
 
+/* Hidden elements */
 [hidden] {
-    display: none;
+    display: none !important;
+}
+
+/* Focus styles */
+:focus-visible {
+    outline: 2px solid #005fcc;
+    outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }
